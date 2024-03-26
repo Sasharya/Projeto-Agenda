@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "431641178112",
+    "firebase_url": "https://bas-master-default-rtdb.firebaseio.com",
+    "project_id": "bas-master",
+    "storage_bucket": "bas-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431641178112:android:9608ece456c0a57310e8e5",
+        "android_client_info": {
+          "package_name": "com.example.testeagenda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDktSADgD91maYu-U78uqUoNwTfToxg5as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
