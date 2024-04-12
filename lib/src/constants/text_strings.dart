@@ -5,23 +5,23 @@
 const String tNo = "No";
 const String tYes = "Yes";
 const String tNext = "Next";
-const String tLogin = "Login";
+const String tLogin = "Entrar";
 const String tEmail = "E-Mail";
-const String tSignup = "Signup";
+const String tSignup = "Registrar";
 const String tLogout = "Logout";
 const String tSuccess = "Success";
-const String tPhoneNo = "Phone No";
+const String tPhoneNo = "Nº de Telefone";
 const String tContinue = "Continue";
-const String tPassword = "Password";
-const String tFullName = "Full Name";
+const String tPassword = "Senha";
+const String tFullName = "Nome completo";
 const String tGetStarted = "Get Started";
 const String tForgetPassword = "Forget Password?";
 const String tSignInWithGoogle = "Sign-In with Google";
 
 
 // -- Validation --
-const String tEmailCannotEmpty = "Email cannot be empty";
-const String tInvalidEmailFormat = "Invalid email format";
+const String tEmailCannotEmpty = "Por favor, preencha o E-mail";
+const String tInvalidEmailFormat = "Insira um E-mail válido";
 const String tNoRecordFound = "No record found";
 
 // -- SnackBar --
@@ -51,19 +51,19 @@ const String tOnBoardingCounter3 = "3/3";
 
 
 // -- Welcome Screen Text
-const String tWelcomeTitle = "Build Awesome Apps";
-const String tWelcomeSubTitle = "Let's put your creativity on the development highway.";
+const String tWelcomeTitle = "Bem-vindo ao sistema de otimização";
+const String tWelcomeSubTitle = "Escolha uma opção para acessar o aplicativo";
 
 
 
 // -- Login Screen Text
-const String tLoginTitle = "Welcome Back,";
-const String tLoginSubTitle = "Make it work, make it right, make it fast.";
+const String tLoginTitle = "Bem-vindo de volta,";
+const String tLoginSubTitle = "Preencha com seus dados abaixo para entrar.";
 const String tRememberMe = "Remember Me?";
-const String tDontHaveAnAccount = "Don't have an Account";
+const String tDontHaveAnAccount = "Não tem uma conta";
 const String tEnterYour = "Enter your";
 const String tResetPassword = "Reset Password";
-const String tOR = "OR";
+const String tOR = "OU";
 const String tConnectWith = "Connect With";
 const String tFacebook = "Facebook";
 const String tGoogle = "Google";
@@ -71,9 +71,9 @@ const String tGoogle = "Google";
 
 
 // -- Sign Up Screen Text
-const String tSignUpTitle = "Get On Board!";
-const String tSignUpSubTitle = "Create your profile to start your Journey.";
-const String tAlreadyHaveAnAccount = "Already have an Account";
+const String tSignUpTitle = "Vamos criar sua conta!";
+const String tSignUpSubTitle = "Apenas preencha os campos abaixo.";
+const String tAlreadyHaveAnAccount = "Já possui uma conta";
 
 
 
@@ -99,10 +99,10 @@ const String tOtpMessage = "Enter the verification code sent at ";
 
 
 // -- Email Verification
-const String tEmailVerificationTitle = "Verify your email address";
-const String tEmailVerificationSubTitle = "We have just send email verification link on your email. Please check email and click on that link to verify your Email address. \n\n If not auto redirected after verification, click on the Continue button.";
-const String tResendEmailLink = "Resend E-Mail Link";
-const String tBackToLogin = "Back to login";
+const String tEmailVerificationTitle = "Verifique seu endereço de E-mail";
+const String tEmailVerificationSubTitle = "Lhe enviamos um E-mail de verificação. Por favor, verifique seu E-mail e clique no link de verificação. \n\n Se você não for redirecionado após verificar, clique no botão de continuar.";
+const String tResendEmailLink = "Reenviar link no E-mail";
+const String tBackToLogin = "Retornar para login";
 
 
 

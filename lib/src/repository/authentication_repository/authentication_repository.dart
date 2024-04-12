@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:testeagenda/src/features/authentication/screens/mail_verification/mail_verification.dart';
 import 'package:testeagenda/src/features/authentication/screens/welcome/welcome_screen.dart';
+import 'package:testeagenda/src/features/core/screens/dashboard/NOSSA/Homescreen.dart';
 import 'package:testeagenda/src/features/core/screens/dashboard/dashboard.dart';
 import 'exceptions/t_exceptions.dart';
 
@@ -39,7 +40,7 @@ class AuthenticationRepository extends GetxController {
     user == null
         ? Get.offAll(() => const WelcomeScreen())
         : user.emailVerified
-            ? Get.offAll(() => const Dashboard())
+            ? Get.offAll(() => const HomeScreen())
             : Get.offAll(() => const MailVerification());
 
     // Note: As per this code you will not see OnBoarding Screen on app launch.

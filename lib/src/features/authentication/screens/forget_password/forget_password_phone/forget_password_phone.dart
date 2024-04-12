@@ -29,7 +29,7 @@ class ForgetPasswordPhoneScreen extends StatelessWidget {
                   subTitle: tForgetPasswordSubTitle,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   heightBetween: 30.0,
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.center, subTitleColor: null, titleColor: null,
                 ),
                 const SizedBox(height: tFormHeight),
                 Form(

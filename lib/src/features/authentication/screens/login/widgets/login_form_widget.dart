@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import 'package:testeagenda/src/common_widgets/buttons/primary_button.dart';
-import 'package:testeagenda/src/features/authentication/controllers/login_controller.dart';
+import '/src/common_widgets/buttons/primary_button.dart';
+import '/src/features/authentication/controllers/login_controller.dart';
 import '../../../../../constants/sizes.dart';
 import '../../../../../constants/text_strings.dart';
 import '../../../../../utils/helper/helper_controller.dart';
@@ -25,34 +25,33 @@ class LoginFormWidget extends StatelessWidget {
           children: [
             /// -- Email Field
             TextFormField(
+              style: TextStyle(color: Colors.white, fontSize: 15),
               validator: Helper.validateEmail,
               controller: controller.email,
-              decoration: const InputDecoration(
-                  prefixIcon: Icon(LineAwesomeIcons.user),
-                  labelText: tEmail,
-                  hintText: tEmail),
+              decoration:
+              const InputDecoration(prefixIcon: Icon(LineAwesomeIcons.user,color: Colors.white,), label: Text(tEmail, style: TextStyle(color: Colors.white70, fontSize: 20)), hintText: tEmail),
             ),
             const SizedBox(height: tFormHeight - 20),
 
             /// -- Password Field
             Obx(
-              () => TextFormField(
+                  () => TextFormField(
+                style: TextStyle(color: Colors.white, fontSize: 15),
                 controller: controller.password,
                 validator: (value) {
-                  if (value!.isEmpty) return 'Enter your password';
+                  if (value!.isEmpty) return 'Coloque sua senha';
                   return null;
                 },
                 obscureText: controller.showPassword.value ? false : true,
                 decoration: InputDecoration(
-                  prefixIcon: const Icon(Icons.fingerprint),
-                  labelText: tPassword,
+                  prefixIcon: const Icon(Icons.fingerprint,color: Colors.white),
+                  label: Text(tPassword, style: TextStyle(color: Colors.white70, fontSize: 20),),
                   hintText: tPassword,
                   suffixIcon: IconButton(
                     icon: controller.showPassword.value
-                        ? const Icon(LineAwesomeIcons.eye)
-                        : const Icon(LineAwesomeIcons.eye_slash),
-                    onPressed: () => controller.showPassword.value =
-                        !controller.showPassword.value,
+                        ? const Icon(LineAwesomeIcons.eye,color: Colors.white)
+                        : const Icon(LineAwesomeIcons.eye_slash,color: Colors.white),
+                    onPressed: () => controller.showPassword.value = !controller.showPassword.value,
                   ),
                 ),
               ),
@@ -63,23 +62,21 @@ class LoginFormWidget extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                onPressed: () =>
-                    ForgetPasswordScreen.buildShowModalBottomSheet(context),
+                onPressed: () => ForgetPasswordScreen.buildShowModalBottomSheet(context),
                 child: const Text(tForgetPassword),
               ),
             ),
 
             /// -- LOGIN BTN
             Obx(
-              () => TPrimaryButton(
+                  () => TPrimaryButton(
                 isLoading: controller.isLoading.value ? true : false,
                 text: tLogin.tr,
-                onPressed: controller.isFacebookLoading.value ||
-                        controller.isGoogleLoading.value
+                onPressed: controller.isFacebookLoading.value || controller.isGoogleLoading.value
                     ? () {}
                     : controller.isLoading.value
-                        ? () {}
-                        : () => controller.login(),
+                    ? () {}
+                    : () => controller.login(),
               ),
             ),
           ],

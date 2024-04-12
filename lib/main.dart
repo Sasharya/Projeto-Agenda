@@ -2,8 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
-import 'package:testeagenda/firebase_options.dart';
-import 'package:testeagenda/src/repository/authentication_repository/authentication_repository.dart';
+import '/firebase_options.dart';
+import '/src/repository/authentication_repository/authentication_repository.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:flutter/cupertino.dart';
 import 'app.dart';
 
 /// ------ For Docs & Updates Check ------
@@ -23,5 +25,6 @@ Future<void> main() async {
       .then((_) => Get.put(AuthenticationRepository()));
 
   /// -- Main App Starts here (app.dart) ...
-  runApp(const App());
-}
+  await initializeDateFormatting('ptBR').then((_) {
+    runApp(const App());
+  });}

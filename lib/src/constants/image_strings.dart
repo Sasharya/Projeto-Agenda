@@ -16,6 +16,8 @@ const String tOnBoardingImage3 = "assets/images/on_boarding_images/on-boarding-i
 // -- Welcome Screen Image [Used in Login & SignUp]
 const String tWelcomeScreenImage = "assets/images/welcome_images/welcome-screen-image.png";
 const String tLogoImage = "assets/images/profile/logo.png";
+const String tWallpaper = "assets/images/welcome_images/wallpaper.png";
+const String tPost61 = "assets/images/welcome_images/Post61.jpg";
 
 
 // -- SOCIAL Images

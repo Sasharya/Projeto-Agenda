@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:testeagenda/src/constants/colors.dart';
-import 'package:testeagenda/src/constants/image_strings.dart';
-import 'package:testeagenda/src/constants/sizes.dart';
-import 'package:testeagenda/src/constants/text_strings.dart';
+import '/src/constants/colors.dart';
+import '/src/constants/image_strings.dart';
+import '/src/constants/sizes.dart';
+import '/src/constants/text_strings.dart';
 import '../../../../../common_widgets/form/form_header_widget.dart';
 
 class ForgetPasswordMailScreen extends StatelessWidget {
@@ -23,13 +23,14 @@ class ForgetPasswordMailScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: tDefaultSpace * 4),
                 FormHeaderWidget(
-                  imageColor: isDark ? tPrimaryColor : tSecondaryColor,
-                  image: tForgetPasswordImage,
-                  title: tForgetPassword,
-                  subTitle: tForgetPasswordSubTitle,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  heightBetween: 30.0,
-                  textAlign: TextAlign.center,
+                    imageColor: isDark ? tPrimaryColor : tSecondaryColor,
+                    image: tForgetPasswordImage,
+                    title: tForgetPassword,
+                    subTitle: tForgetPasswordSubTitle,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    heightBetween: 30.0,
+                    textAlign: TextAlign.center,
+                    titleColor: Colors.white, subTitleColor: Colors.white
                 ),
                 const SizedBox(height: tFormHeight),
                 Form(
@@ -46,7 +47,8 @@ class ForgetPasswordMailScreen extends StatelessWidget {
                       SizedBox(
                           width: double.infinity,
                           child: ElevatedButton(
-                              onPressed: () {}, child: const Text(tNext))),
+                              onPressed: () {},
+                              child: const Text(tNext))),
                     ],
                   ),
                 ),
